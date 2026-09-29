@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Use Inter as the primary UI font */
+html {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Leaflet polish */
+.leaflet-control-zoom a {
+  border-radius: 0.5rem !important;
+  border: 1px solid rgb(226 232 240) !important;
+  box-shadow: 0 4px 12px rgba(2,6,23,.08);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0.75rem !important;
+  border: 1px solid rgb(226 232 240) !important;
+  box-shadow: 0 12px 28px rgba(2,6,23,.15) !important;
+}
+
+/* Minor resets */
+:root { --radius: 0.5rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+a { text-decoration: inherit; }
+
+@keyframes bar {
+  from { width: 0 }
+  to { width: var(--tw-size, 100%) }
+}
